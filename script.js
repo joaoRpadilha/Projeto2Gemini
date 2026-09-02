@@ -61,3 +61,32 @@ function lerEmVozAlta() {
     let conteudo = document.querySelector("main");
     let texto = conteudo.innerText;
 }
+
+let fala = new SpeechSynthesisUtterance(texto);
+
+fala.lang = "pt-BR";
+
+fala.onend = finalizarLeitura;
+
+lendo = true
+
+function lerEmVozAlta() {
+    let conteudo = document.querySelector("main");
+    let texto = conteudo.innerText;
+
+    let fala = new SpeechSynthesisUtterance(texto);
+
+    fala.lang = "pt-BR";
+    fala.onend = finalizarLeitura;
+
+    lendo = true;
+
+}
+finalizarLeitura is not defined
+
+speechSynthesis.speak(fala);
+
+function finalizarLeitura() {
+    // implemente aqui
+}
+
