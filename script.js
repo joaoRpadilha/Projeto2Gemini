@@ -58,6 +58,36 @@ function lerEmVozAlta() {
 }
 
 function lerEmVozAlta() {
+
+function lerEmVozAlta() {
+    if (lendo === true) {
+
+        // se estiver pausado
+        if (speechSynthesis.paused === true) {
+        // continua de onde parou
+        speechSynthesis.resume();
+        } else {
+        // pausa
+        speechSynthesis.pause();
+        }
+
+    return;
+}
+
+let conteudo = document.querySelector("main");
+let texto = conteudo.innerText;
+
+let fala = new SpeechSynthesisUtterance(texto);
+
+fala.lang = "pt-BR";
+fala.onend = finalizarLeitura;
+
+speechSynthesis.cancel();
+speechSynthesis.speak(fala);
+
+lendo = true;
+}
+
     let conteudo = document.querySelector("main");
     let texto = conteudo.innerText;
 }
