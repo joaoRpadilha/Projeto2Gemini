@@ -29,3 +29,10 @@ modal.style.display = "block";
 function fechaModal() {
 modal.style.display = "none";
 }
+
+// TAMANHO DE FONTES
+let tamanhoFonteAtual = 16;
+const valorAdicionado = 2;
+const valorSubtraido = 2;
+let btnAumentaFonte = document.getElementById("btnAumentaTexto");
+let btnDiminuiFonte = document.getElementById("btnDiminuiTexto");
