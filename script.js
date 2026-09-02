@@ -49,3 +49,11 @@ function diminuiFonte() {
 // LEITURA DE TELA
 let lendo = false;
 const btnLeitura = document.getElementById("btnVoz");
+btnLeitura.addEventListener("click", lerEmVozAlta);
+function lerEmVozAlta() {
+    let conteudo = document.querySelector("main");
+}
+function lerEmVozAlta() {
+    let conteudo = document.querySelector("main");
+    let texto = conteudo.innerText;
+}
