@@ -46,3 +46,6 @@ function diminuiFonte() {
     tamanhoFonteAtual = tamanhoFonteAtual - valorSubtraido;
     document.documentElement.style.fontSize = `${tamanhoFonteAtual}px`;
 }
+// LEITURA DE TELA
+let lendo = false;
+const btnLeitura = document.getElementById("btnVoz");
